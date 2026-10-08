@@ -38,8 +38,15 @@ footer { padding:22px 20px 36px; color:var(--muted); font-size:14px; }
 <main>
 <section>
   <div class="wrap">
-    <img alt="Фрезер 4060, квадратные рельсы, ход Z 200 мм" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/hero.jpg">
-    <figcaption>Общий вид. Портал изготавливается под просвет 200 мм и ход Z 200 мм.</figcaption>
+    <img alt="Фрезер 4060, квадратные рельсы, ход Z 200 мм" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/hero.jpg">
+    <figcaption>Общий вид. Портал поднят: просвет и ход по Z 200 мм. Шпиндель на кадре — водяной, диаметр 100 мм.</figcaption>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Управление Mach3</h2>
+    <p>Программа станка — Mach3. На экране координаты X, Y, Z и четвёртая ось, пуск цикла, удержание подачи, ручной перемещатель. Файл обработки загружается с компьютера на Windows.</p>
+    <img alt="Экран программы Mach3" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/mach3.jpg">
   </div>
 </section>
 <section>
@@ -71,38 +78,32 @@ footer { padding:22px 20px 36px; color:var(--muted); font-size:14px; }
     <h2>Привод с обратной связью</h2>
     <p>На осях X, Y и Z стоят гибридные шаговые двигатели закрытого контура. На валу двигателя энкодер. Если каретка теряет шаг под нагрузкой, драйвер это видит и возвращает положение. У открытого шагового привода такого контроля нет: ошибка остаётся в детали.</p>
     <p>Это привод перемещений, не привод шпинделя. Шпиндель асинхронный, обороты задаёт частотный преобразователь.</p>
-    <img alt="Параметры заказа" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/spec.jpg">
+    <img alt="Параметры заказа" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/spec.jpg">
   </div>
 </section>
 <section>
   <div class="wrap">
     <h2>Шпиндель GDZ-100-3.2KW</h2>
-    <img alt="Шпиндель 3,2 кВт, диаметр 100 мм, четыре подшипника" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/spindle.jpg">
+    <img alt="Шпиндель 3,2 кВт, диаметр 100 мм, четыре подшипника" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/spindle.jpg">
     <figcaption>Длина корпуса 245 мм, диаметр 100 мм, водяные штуцеры на заднем фланце. Кронштейн станка изготавливается под этот диаметр.</figcaption>
-    <img alt="Цанговый зажим ER20" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/collet.jpg" style="margin-top:16px">
+    <img alt="Цанговый зажим ER20" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/collet.jpg" style="margin-top:16px">
     <figcaption>Гайка и цанга 6 мм входят в комплект. Остальные диаметры 1–13 мм ставятся отдельными цангами ER20.</figcaption>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Управление Mach3</h2>
-    <p>Программа станка — Mach3. На экране координаты X, Y, Z и четвёртая ось, пуск цикла, удержание подачи, ручной перемещатель. Файл обработки загружается с компьютера на Windows.</p>
-    <img alt="Экран программы Mach3" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/mach3.jpg">
-  </div>
-</section>
-<section>
-  <div class="wrap">
     <h2>Направляющие и передача</h2>
     <p>По осям X, Y и Z стоят профильные линейные направляющие. Перемещение — шарико-винтовая передача. На оси Z два кареточных блока, один над другим.</p>
-    <img alt="Профильные направляющие и шарико-винтовая передача" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/rails.jpg">
+    <img alt="Профильные направляющие и шарико-винтовая передача" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/rails.jpg">
   </div>
 </section>
 <section>
   <div class="wrap">
     <h2>Поворотная ось A</h2>
-    <p>Ось входит в станок и распаяна на пятый канал контроллера до отгрузки. Патрон 100 мм, четыре кулачка, ключ в комплекте. Задняя бабка не устанавливается. Редуктор гармонический, 50:1, поэтому люфт делительной пары меньше, чем у червячной передачи того же класса.</p>
-    <p>Режим работы — деление и обработка по развёртке. Контроллер выдаёт шаг и направление на ось A вместе с линейными осями. Постпроцессор Mach3 должен быть настроен на эту ось. Непрерывная пятикоординатная обработка с одновременным наклоном в этой комплектации не заявляется.</p>
+    <img alt="Поворотная ось, гармонический редуктор 50:1, патрон 100 мм" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/axis.jpg">
+    <figcaption>Гармонический редуктор 50:1, двигатель 57 мм, четырёхкулачковый патрон 100 мм. Задняя бабка не входит. Ось подключена к контроллеру.</figcaption>
+    <p>Режим работы — деление и обработка по развёртке. Контроллер выдаёт шаг и направление на ось A вместе с линейными осями. Постпроцессор Mach3 настраивается на эту ось. Непрерывная пятикоординатная обработка в этой комплектации не заявляется.</p>
   </div>
 </section>
 <section>
@@ -118,7 +119,7 @@ footer { padding:22px 20px 36px; color:var(--muted); font-size:14px; }
         <p>Ванна по периметру стола и подвод жидкости. Нужна при фрезеровании алюминия, латуни и меди с охлаждением. Стоимость ванны считается отдельно.</p>
       </div>
     </div>
-    <img alt="Станок с ванной под СОЖ" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/tray.jpg" style="margin-top:16px">
+    <img alt="Станок с ванной под СОЖ" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/tray.jpg" style="margin-top:16px">
     <figcaption>Ванна под сбор и отвод СОЖ. На заказе портал выше, чем на этом кадре: просвет 200 мм.</figcaption>
   </div>
 </section>
@@ -127,11 +128,11 @@ footer { padding:22px 20px 36px; color:var(--muted); font-size:14px; }
     <h2>Шкаф управления и опора винта</h2>
     <div class="grid">
       <figure>
-        <img alt="Металлический шкаф управления" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/box.jpg">
+        <img alt="Металлический шкаф управления" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/box.jpg">
         <figcaption>Металлический шкаф: частотный преобразователь, драйверы осей, аварийный стоп.</figcaption>
       </figure>
       <figure>
-        <img alt="Радиально-упорный подшипник" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/bearing.jpg">
+        <img alt="Радиально-упорный подшипник" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/bearing.jpg">
         <figcaption>Опоры шарико-винтовой передачи — радиально-упорные подшипники.</figcaption>
       </figure>
     </div>
@@ -141,9 +142,9 @@ footer { padding:22px 20px 36px; color:var(--muted); font-size:14px; }
   <div class="wrap">
     <h2>Характер работ</h2>
     <p>Капролон, акрил, фанера, алюминий, латунь, медь, таблички из двухслойного пластика. Кадры показывают тип детали, а не партию с этого станка.</p>
-    <img alt="Примеры обработки металла и пластика" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/works.jpg">
-    <img alt="Корпусные детали из алюминия" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/alum.jpg" style="margin-top:12px">
-    <img alt="Фанера, акрил, таблички" src="https://raw.githubusercontent.com/robo-sklad/cnc-4060-mach3/main/img/signs.jpg" style="margin-top:12px">
+    <img alt="Примеры обработки металла и пластика" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/works.jpg">
+    <img alt="Корпусные детали из алюминия" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/alum.jpg" style="margin-top:12px">
+    <img alt="Фанера, акрил, таблички" src="https://cdn.jsdelivr.net/gh/robo-sklad/cnc-4060-mach3@main/img/signs.jpg" style="margin-top:12px">
   </div>
 </section>
 </main>
